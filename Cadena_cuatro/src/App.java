@@ -1,9 +1,9 @@
 public class App {
 
     public static void main(String[] args) {
-        String cadena = "abcdef";
+        String cadena = "aaaaa";
         Vocales vocales = new Vocales();
-        vocales.cantidad_vocales(cadena);
-
+        int cantidad_vocales = vocales.cantidad_vocales(cadena);
+        System.out.println("Cantidad de vocales de "+cadena+ " es: "+ cantidad_vocales);
     }
 }

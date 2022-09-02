@@ -1,14 +1,20 @@
 public class Vocales {
 
-    private char[] vocales = {'a','e','i','o','u'};
+    private String vocales = "aeiou";
     public Vocales() {
     }
     public int cantidad_vocales(String cadena)
     {
-        int vocales= 0;
+        int nvocales= 0;
 
         cadena = cadena.toLowerCase();
-        System.out.println(cadena.matches("([aeiou])"));
-        return  vocales;
+
+        for (int i = 0; i < cadena.length(); i++) {
+            char l = cadena.charAt(i);
+            boolean isVocal = vocales.contains(Character.toString(l));
+            nvocales  += isVocal ? 1:0;
+        }
+
+        return  nvocales;
     }
 }
