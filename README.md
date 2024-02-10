@@ -1,1 +1,2 @@
-# cadenas_-_palabras
+# Manejo de Strings con Java
+Ejercicio para el manejo de Strings. 
